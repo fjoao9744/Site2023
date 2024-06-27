@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML e CSS</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        img {
+width: 100px;
+height: 120px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <img src="https://imgs.search.brave.com/koK6koJ8NM__vKoRkasqHRMc0cK5CjrlKRn-NDaYRsY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE2/LzEwL2h0bWw1LWxv/Z28ucG5n" alt="">
+    <img src="https://imgs.search.brave.com/f3dGDrKFSF3fF_uav9uSnHWrBk8-BkhW-aRYkpWRnK8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/ZG93bmxvYWQub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE3/LzA0L2Nzcy0zLWxv/Z28ucG5n" alt="">
+    
+    <h1>Tags em HTML5</h1>
+    <h2>Codigo base</h2>
+
+        <dl 
+        style="background-color: rgb(187, 187, 187);
+        width: 500px;">
+            <code><dt>&lt;!DOCTYPE html&gt;</dt></code>
+            <dd>"quero que meu site trabalhe com HTML5."</dd>
+            <code><dt>&lt;html lang="en"&gt;</dt></code>
+            <dd>"Meu site sera na lingua:"</dd>
+            <code>&lt;head&gt;</code>
+                <code><dt>&lt;meta charset="UTF-8"&gt;</dt></code>
+                <dd>quero que meu site seja compativel com o <abbr title="UTF-8 é a codificação que permite acentuações e pontuações.">UTF-8.</abbr></dd>
+                <code><dt>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</dt></code>
+                <dd>"quero que meu site seja viso em escala 100%."</dd>
+                <code><dt>&lt;title&gt;Document&lt;/title&gt;</dt></code>
+                <dd>"o nome que aparecera como titulo do site."</dd>
+            <code>&lt;/head&gt;</code>
+            <code><dt>&lt;body&gt;</dt></code>
+            <dd>"aqui vai ficar seu conteudo"</dd>
+            <code>&lt;/body&gt;</code> <br>
+            <code>&lt;/html&gt;</code>
+        </dl>
+
+    <hr>
+    <h2>Titulo/Cabeçario</h2>
+        <p style="font-size: 20px;">&lt;h1&gt;&lt;/h1&gt;</p>
+        <p>cria um cabeçario ou titulo para seu conteudo. <br> tambem existem os sub-titulos e suas hierarquias.(&lt;h2&gt;, &lt;h3&gt; até o &lt;h6&gt;)</p>
+    
+    <hr>
+    <h2>Paragrafo</h2>
+        <p style="font-size: 20px;">&lt;p&gt;&lt;/p&gt;</p>
+        <p>cria um paragrafo no seu conteudo.</p>
+
+    <hr>
+    <h2>Linha horizontal</h2>
+    <p style="font-size: 20px;">&lt;hr&gt;</p>
+    <p>cria uma linha horizontal.</p>
+
+    <hr>
+    <h2>Quebra de linha</h2>
+    <p style="font-size: 20px;">&lt;br&gt;</p>
+    <p>faz uma quebra de linha em um texto.</p>
+
+    <hr>
+    <h2>Imagens</h2>
+    <p style="font-size: 20px;">
+        &lt;img <abbr title="aqui ficara a url ou caminho da imagem">src=""</abbr><abbr title="aqui ficara um texto que sera exibida caso a imagem não carregue">alt=""</abbr>&gt;
+    </p>
+    <p>no src="" pode ser colocado o caminho da imagem caso ela esteja localmente ou a url caso esteja em outro servidor.</p>
+    <p>no alt="" ficara o texto que sera exibido caso a imagem não carregue</p>
+    
+    <hr>
+    <h2>Favicon</h2>
+    <p style="font-size: 20px;">
+        &lt;link rel="shortcut icon" <abbr title="aqui ficara o caminho do arquivo">href="favicon.ico"</abbr> <abbr title="aqui ficara o media tipe do arquivo">type="image/x-icon"</abbr>&gt;
+    </p>
+    <p>favicon é a imagem que fica junto com o titulo <br> ex:</p>
+    <img  src="midia/favicon.PNG" alt="exemplo de favicon" style="height: 50px; width: 260px;" >
+    <p>o formato de arquivo mais recomendado para uso de favicon é o .ico, porem, tambem podemos usar outros formatos como png, mas lembrando, o arquivo deve ter um tamanho pequeno.</p>
+    
+    <hr>
+    <h2>Formatação de texto</h2>
+    <h3>negrito</h3>
+    <p style="font-size: 20px;">&lt;strong&gt;&lt;/strong&gt;</p>
+    <p>para dar <strong>destaque</strong> a algo.</p>
+
+    <h3>italico</h3>
+    <p style="font-size: 20px;">&lt;em&gt;&lt;/em&gt;</p>
+    <p>para dar <em>enfase</em> a algo.</p>
+
+    <h3>Texto deletado</h3>
+    <p style="font-size: 20px;">&lt;del&gt;&lt;/del&gt;</p>
+    <p>para textos que devem ser lidos <del>mas não considerados.</del></p>
+
+    <h3>texto inserido</h3>
+    <p style="font-size: 20px;">&lt;ins&gt;&lt;/ins&gt;</p>
+    <p>para textos que foram <ins>adicionados no futuro.</ins></p>
+
+    <h3>texto marcado</h3>
+    <p style="font-size: 20px;">&lt;mark&gt;&lt;/mark&gt;</p>
+    <p>para <mark>marcar</mark> algo.</p>
+
+    <h3>texto sobrescrito e subscrito</h3>
+    <p style="font-size: 20px;">&lt;sub&gt;&lt;/sub&gt; e &lt;sup&gt;&lt;/sup&gt;</p>
+    <p>ex: H<sub>2</sub>O(sub) e x<sup>20</sup>+3(sup).</p>
+
+    <h3>Codigo-fonte</h3>
+    <p style="font-size: 20px;">&lt;code&gt;&lt;/code&gt;</p>
+    <p>é usado para escrever codigos de programação. <br> ex:</p>
+    <code>const myHeading = document.querySelector("h1");
+        myHeading.textContent = "Olá mundo!";</code>
+    <p>geralmente essa formatação serve para ler melhor os codigos.</p>
+
+    <h3>pre-formatação</h3>
+    <p style="font-size: 20px;">&lt;pre&gt;&lt;/pre&gt;</p>
+    <p>é usado para formatar como esta no seu editor de codigo.</p>
+
+    <h3><bdo dir="rtl">texto invertido</bdo></h3>
+    <p style="font-size: 20px;">&lt;bdo dir="rtl"&gt;&lt;/bdo&gt;</p>
+    <p>texto invertido.</p>
+
+    <hr>
+    <h2>Abreviação</h2>
+    <p style="font-size: 20px;">&lt;abbr&gt;&lt;/abbr&gt;</p>
+    <p>ex: <abbr title="HyperTextMarkLanguage">HTML5</abbr> <abbr title="CascadingStyleSheets">CSS</abbr>
+    <p>passe o cursor em cima das siglas.</p>
+
+    <hr>
+    <h2>Citações</h2>
+    <h3>Citações simples</h3>
+    <p style="font-size: 20px;">&lt;q&gt;&lt;/q&gt;</p>
+    <p>usado para citar a frase de alguem <br> ex: <br> no site <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/q" target="_blank" rel="external">developer.mozilla.org</a> é descrito a seguinte definição para essa tag: <q>Este elemento destina-se a citações curtas que não requerem marcações de parágrafo;</q></p>
+
+    <h3>Citações compostas</h3>
+    <p style="font-size: 20px;">&lt;blockquote&gt;&lt;/blockquote&gt;</p>
+    <p>é usado para uma citação mais complexa <br> ex: no mesmo site da mozilla.org essa tag é descrita como:
+    <blockquote>
+        O Elemento HTML &lt;blockquote&gt; (ou Elemento HTML de citação de bloco) indica que o texto incluído é uma longa citação.
+    </blockquote></p>
+
+    <hr>
+    <h2>Listas</h2>
+    <h3>listas ordenadas</h3>
+    <p style="font-size: 20px;">&lt;ol&gt;&lt;ol&gt;</p>
+    <p>listas que possuem uma ordem. <br>para adicionar um item na lista é usado a tag &lt;li&gt;. <br> ex: 
+        <ol>
+        <li>acordar
+        <li>tomar café
+        <li>tomar banho
+        </ol>
+    <br>repare que existe uma ordem.
+    </p>
+
+    <h3>listas não ordenadas</h3>
+    <p style="font-size: 20px;">&lt;ul&gt;&lt;ul&gt;</p>
+    <p>listas que <strong>não</strong> possuem ordem. <br>&lt;li&gt; tambem é usado para adicionar um item na lista <br> ex: <br>
+    uma lista de compras:
+
+    <ul>
+    <li>arroz
+    <li>café
+    <li>açucar
+    </ul>
+    </p>
+
+    <h3>listas de definição</h3>
+    <p style="font-size: 20px;">&lt;dl&gt;&lt;dl&gt;</p>
+    <p>esse tipo de lista como o nome sugere é usado para definir a alguma coisa. <br> sendo que dentro da tag &lt;dl&gt;&lt;dl&gt; devem ter as tags <strong>&lt;dt&gt;&lt;dt&gt;</strong> e <strong>&lt;dd&gt;&lt;dd&gt;</strong>. <br>sendo que dentro de <strong>dt
+    </strong> ficara o termo que tera a sua descrição, enquanto no <strong>dd</strong> ficara a propria descrição do termo. <br>ex:</p>
+    <pre>
+        <code>
+    &lt;dl&gt;
+        &lt;dt>HTML&lt;/dt&gt;
+        &lt;dd>Linguagem de marcação utilizada para criar o conteudo de sites&lt;/dd&gt;
+    &lt;/dl&gt;
+        </code>
+    </pre>
+
+
+    <hr>
+    <h2>Links</h2>
+    <p>&lt;a href=""&gt;&lt;/a&gt;</p>
+    <h3>links externos</h3>
+    <p>para adicionar links externos, basta colocar a url do site que você queira colocar dentro do parâmetro <strong>href=""</strong>. </p>
+    
+    <h3>links internos</h3>
+    <p>ja nos links internos, ao envez de uma url, é o nome do arquivo que o link ira apontar, como uma segunda pagina para seu site.</p>
+
+    <h3>links para dowload</h3>
+    <p>para fazer um link fazer um dowload de algum arquivo, é só colocar o parametro <em>download=""</em> dentro da tag &lt;a&gt; e indicar para o navegador o nome do arquivo dentro do parametro.</p>
+
+    <hr>
+    <h2>imagens responsivas</h2>
+    <p>uma imagem responsiva é uma imagem que se adapta de acordo com o tamanho da tela. <br> para fazer uma imagem assim usamos a tag <strong>&lt;picture&gt;&lt;/picture&gt;</strong> e colocamos as tag &lt;source media="(min-width: )" srcset="" type="image/"&gt;. <br> a tag assusta mas veja bem, dentro do <em>media</em> ficara o tamanho até aonde a imagem vai, se passar, a imagem vai mudar. dentro do <em>srcset</em> vai ficar o caminho da imagem que vai substituir a atual, e dentro do <em>type</em> vai ficar o <a href="paginas/Termos.html" target="_blank" rel="next">media-type</a> da imagem. <br>ex:</p>
+    <img src="midia/picture.PNG" alt="imagem de exemplo" style="width: 600px;">
+
+
+
+
+    <br>
+    <a href="../Index.html" target="_self" rel="prev">voltar</a>
+    
+</body>
+</html>
