@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <link rel="stylesheet" href="../style.css">
+    
+
+    
+
+
+</head>
+<body>
+    <h1>Cores</h1>
+    <p>Toda cor mostrada na tela é uma mistura de vermelho, verde e azul</p>
+
+    <hr>
+
+    <h2>Cores no CSS</h2>
+    <p>As cores em <a href="../CSS/CSS.html">css</a> podem ser representadas com o nome delas <br>Ex:</p>
+    <img src="midia/cores em css.PNG" alt="cores em css">
+    <p>porem, tambem podem ser representadas por:
+        <ul>
+            <li>nome</li>
+            <li>valores RGB (rbg(000000000);)</li>
+            <li>valores hexadecimal (#000000;)</li>
+            <li>valores HLS(css3) (hsl(000 0% 0%</li>
+            <li>valores HWB(css4)</li>
+            <li>ou com o <code>currentcolor</code> palavra-chave</li>
+        </ul>
+    </p>
+
+    <hr>
+
+    <h2>Cores RGB</h2>
+    <p>São suportadas em todos os navegadores, é representado como um codigo de 9 numeros inteiros(000 000 000), 
+        sendo que cada um dos 3 valores é a intensidade de cada cor(vermelho, verde e azul) de 0 a 255</p>
+        <img src="midia/coresRGB.PNG" alt="CoresRGB">
+
+    <p>Tons de cinza:</p>
+
+    <img src="midia/coresRGB2.PNG" alt="tons de cinza">
+
+    <hr>
+
+    <h2>Cores em hexadecimal</h2>
+    <p>Tambem são suportadas por todos os navegadores. as cores hexadecimais são representadas por uma hashtag(#) no começo e uma sequencia de
+         6 numeros inteiros(#000000) sendo bem parecido com as cores em RGB, porem, as cores hexadecimais envez de ir de 0 a 255, vão de 00 a FF(0 1 2 3 4 5 6 7 8 9 A B C D E F)
+    </p>
+    <img src="midia/coreshex.PNG" alt="cores em hexadecimal">
+
+    <p>Tons de cinza:</p>
+
+    <img src="midia/coreshex2.PNG" alt="">
+
+    <hr>
+
+    <h2>Cores em CSS por <strong>nome</strong></h2>
+    <p>o css suporta 140 nomes de cores</p>
+    <a href="subpaginas/cores-por-nome.html" rel="next">acesse aqui para ver todas as cores por nome <br></a>
+    <a href="subpaginas/cores-por-grupo.html" rel="next">acesse aqui para ver todas as cores por grupo</a>
+
+    <p><i>curiosidade: os monitores modernos hoje podem mostrar 16384 cores, porem antigamente só eram mostradas 216 cores que foram chamadas de "Safe Colors" ou "Cores Seguras"</i></p>
+
+    <hr>
+
+    <h2>Cores RGBA</h2>
+    <p>as cores RGBA são uma extensão do RGB que adiciona a opacidade, para uma cor ser representada em RGBA ela tera o mesmo codigo que a cor RBG porem com um valor adicional no final que vai de 0 a 1 ditando sua opacidade sendo 1 a opacidade completa e 0 a minima opacidade
+        (000 000 000 00)
+    </p>
+    <p style="color: rgba(320, 31, 71, 0.9);">Ex: 255 72 31 0.9</p>
+    <p style="color: rgba(320, 31, 71, 0.7) ;">Ex: 255 72 31 0.7</p>
+    <p style="color: rgba(320, 31, 71, 0.5) ;">Ex: 255 72 31 0.5</p>
+    <p style="color: rgba(320, 31, 71, 0.3) ;">Ex: 255 72 31 0.3</p>
+
+    <hr>
+
+    <h2>Cores HSl</h2>
+    <p>cores HSL não suportadas pelos navegadores Edge, Chrome, Firefox, Safari, Opera 10+ e no IE9+. <br>
+    HSl significa <i>Hue, Saturation, and Lightness</i> que em portugues fica Matiz, Saturação e Leveza</p>
+    <p>Matiz é o grau da cor em uma roda de 0 a 360, sendo que 360 é vermelho, 240 é azul e 120 é verde. <br>
+    A Saturação é a intensidade da cor que vai em uma contagem de 0% até 100%, sendo que 100% é a cor na intensidade total e 0% é um cinza <br>
+    Leveza é a quantidade de luz que você dar a cor, sendo que 0% de luz é uma cor escura e 100% de luz é uma cor clara </p>
+
+    <hr>
+
+    <h2>Cores HSLA</h2>
+    <p>Funciona identicamente as RGBA</p>
+    <p style="color: hsla(220, 90%, 30%, 0.8);">ex: 220, 90%, 30%, 0.8</p>
+
+    <hr>
+
+    <h2>Cores HWB</h2>
+    <p>As cores HWB que significam Hue, Whiteness, Blackness são um padrão novo de cores sugerido para o <i>CSS4</i>, então o HTML não tem suporte para esse padrão de cor <strong>(ainda)</strong></p>
+
+    <hr>
+
+    <h2>Cores CMYK</h2>
+    <p>As cores CMYK tambem são uma sugestão para o CSS4, elas possuem 4 valores: ciano, magenta, amarelo e preto(0% 0% 0% 0%). <br>
+    Elas não são suportadas pelo HTML, porem, enquanto as telas usam as cores RGB, as impressoras usam as cores CMYK</p>
+
+    <hr>
+
+    <h2>NCol</h2>
+    <p>NCol(<i>Natural Colors</i> ou <i>Cores Naturais</i>) é uma iniciativa da <a href="https://www.w3schools.com/" target="_blank" rel="external">w3schools</a>. O NCol é um sistema criado para facilitação da seleção de cores no HTML, porem o HTML não suporta o NCol. <br>
+    Para representar as cores em NCol usamos uma letra que represa a cor e logo em seguida o numero(em porcentagem) de distancia daquela cor. Por exemplo, <code>Y50%</code>, essa cor é amarelo com 50% verde, que é a proxima cor. <br>
+    Aqui esta a tabela com a letra de cada cor:</p>
+    <img src="midia/coresNCol.PNG" alt="Tabela de letra para NCol"> <br>
+    <img src="midia/coresNCol2.PNG" alt="tabela de gradiente das cores do NCol">
+    
+    <hr>
+
+    <h1>Teoria das cores</h1>
+    <p>Agora que você ja sabe algumas formas de representar cores na web, vamos para a teoria das cores. <br>
+    Na teoria das cores abordamos varios conceitos, categorias e definições importantes para web design e desenvolvimento web. </p>
+
+    <h2>O primeiro circulo cromatico</h2>
+    <p>O primeiro circulo cormatico surgiu em 1666 com Isaac Newton logo após ele colocar um prisma polido sob raios solares e descobrir que os feixes de luz não são puros e sim formados por varias cores. <br></p>
+    <img src="midia2/isaacnewton.png" alt="descobrimento das cores">
+    <p>E assim ele desenvolveu a teoria que todas as cores são a mistura de <strong>vermelho</strong>, <strong>verde</strong> e <strong>azul</strong> e desenvolveu o primeiro circulo cromatico ou roda de cores.</p>
+    <img src="midia2/isaacnewton2.png" alt="primeira roda de cores">
+
+    <hr>
+
+    <p>Em 1766, o cientista Moses Harris criou a primeira roda de cor que clacifica o vermelho, verde e azul como cores primarias.</p>
+    <img src="midia2/rodacor.png" alt="roda de cor criada por moses">
+
+    <p>
+        <i>O sistema de cores usado na produção de cores pela luz é o<strong> RGB</strong></i> <br>
+        <i>O sistema de cores usados na impressão é o <strong>CMYK</strong></i> <br>
+        <i>O sistema de cores usados por artistas e pintores é o <strong>RYB</strong>(Red, Yellow e Blue)</i> <br>
+    </p>
+
+    <hr>
+
+    <h2>Cores primárias</h2>
+    <p>As cores primarias são as cores principais de um determinado sistema</p>
+    <img src="midia/coresprim.PNG" alt="cores primarias em RGB">
+    <img src="midia/coresprim2.PNG" alt="cores primarias em CMY">
+    <img src="midia/coresprim3.PNG" alt="cores primarias em RYB">
+
+    <h2>Cores secundarias</h2>
+    <p>São as misturas das cores principais de determinado sistema</p>
+    <h3>RGB</h3>
+    <img src="midia/coresec.PNG" alt="cores secundarias em RGB">
+    <h3>CMY</h3>
+    <img src="midia/coresec2.PNG" alt="cores secundarias em CMY">
+    <h3>RYB</h3>
+    <img src="midia/coresec3.PNG" alt="cores secundarias em RYB">
+
+    <hr>
+
+    <h2>Cores tercearias</h2>
+
+    <p>As cores tercearias são a mistura de uma cor secundaria e uma primaria.</p>
+    <img src="midia2/corestercearias.png" alt="cores tercearias">
+
+
+    <hr>
+
+    <h2>Rodas de Cores</h2>
+    <p>A roda de cor mostra a relação entre as cores primarias, secundarias e tercearias</p>
+    <img src="midia2/rodadecor.png" alt="roda de cor"> 
+    <img src="midia2/roda1.PNG" alt="roda de cores em RGB"> <img src="midia2/roda2.PNG" alt="roda de cores em CMY"> <img src="midia2/roda3.PNG" alt="roda de cor em RYB">
+
+    <h3>Cores principais do RGB:</h3>
+    <img src="midia2/coresRGB.PNG" alt="cores principais do RGB">
+
+    <h3>Cores principais do CMY(K)</h3>
+    <img src="midia2/coresCMY.PNG" alt="cores principais em CMY(K)">
+
+    <h3>Cores principais do RBY</h3>
+    <img src="midia2/coresRBY.PNG" alt="cores principais em RBY">
+
+    <hr>
+
+    <h2>Matizes, tonalidade e saturação</h2>
+
+    <h3>Matiz</h3>
+    <p>A posição ao lado da cor na roda de cores</p>
+    <p style="font-size: 15px;">Matiz da cor vermelha:</p>
+    <img src="midia2/matiz.png" alt="matiz da cor vermelha">
+
+    <h3>Tonalidade</h3>
+    <p>Indica o quão clara ou escura a cor é</p>
+    <img src="midia2/tons.png" alt="ecemplos sobre tonalidade">
+
+    <h3>Saturação</h3>
+    <p>Quanto mais saturação, mais brilhante a cor, as cores desaturadas tem menos pigmento</p>
+    <img src="midia2/saturação.png" alt="exemplos sobre saturação">
+
+    <hr>
+
+    <h1>Esquemas de cores</h1>
+
+    <p>Os esquemas de cores são combinações logicas na roda de cores.
+         O objetivo de um esquema de cores é criar um sentimento estético de estilo e apelo.</p>
+
+
+    <h2>Cores Acromaticas</h2>
+    <img src="midia3/acromatico.png" alt="esquema acromatico">
+    <p>è o esquema padrão das paginas web e bastante preferido nos dispositivos menores pois melhora a vida util da bateria</p>
+
+    <h2>Cores Monocromáticas</h2>
+    <p>Usam apenas uma cor com tonalidades diferentes</p>
+    <img src="midia3/monocromatico.png" alt="cores monocromaticas">
+
+    <h2>Cores Analógas</h2>
+    <p>São cores proximas umas das outras na roda de cor</p>
+    <img src="midia3/analogas.png" alt="cores analogas">
+
+    <h2>Cores Complementares</h2>
+    <p>São as cores de lados opostos da roda de cores</p>
+    <img src="midia3/complementares.png" alt="cores complementares">
+
+    <h2>Cores Triádicas</h2>
+    <p>São formados por cores igualmente espaçados em torno da roda de cores</p>
+    <img src="midia3/triadicas.png" alt="cores triadicas">
+
+    <h2>Cores compostas(ou Complementar dividido)</h2>
+    <p>São quase a mesma coisa que as cores opostas, porem, ele usa cores em ambos os lados da tonalidade oposta.</p>
+    <img src="midia3/composto.png" alt="cores compostas">
+
+    <hr>
+
+    <h1>Algumas paletas de cores</h1>
+    <h2>Paletas rusticas</h2>
+    <img src="midia3/paletas rusticas.PNG" alt="paletas rusticas">
+    <img src="midia3/paletas rusticas 2.PNG" alt="paletas rusticas">
+    <img src="midia3/paletas rusticas 3.PNG" alt="paletas rusticas">
+
+    <h2>Paletas de céu</h2>
+    <img src="midia3/paletas do ceu.PNG" alt="paletas do ceu">
+
+    <h2>Paletas das flores</h2>
+    <img src="midia3/paletas de flores.PNG" alt="paletas das flores">
+
+    <h2>Paletas da areia</h2>
+    <img src="midia3/paletas de areia.PNG" alt="paletas da areia">
+
+    <h2>Paletas da praia</h2>
+    <img src="midia3/paletas da praia.PNG" alt="paletas da praia">
+
+    <h2>Paletas de algumas marcas:</h2>
+    <h3>Google</h3>
+    <img src="midia3/google.PNG" alt="paleta do google">
+
+    <h3>Facebook</h3>
+    <img src="midia3/facebook.PNG" alt="paleta do facebook">
+
+    <h3>Microsoft</h3>
+    <img src="midia3/microsoft.PNG" alt="paleta da microsoft">
+
+    <h3>Yahoo</h3>
+    <img src="midia3/yahoo.PNG" alt="paleta do yahoo">
+
+    <h3>Netflix</h3>
+    <img src="midia3/netiflix.PNG" alt="paleta da netflix">
+
+    <h3>Coca-Cola</h3>
+    <img src="midia3/coca cola.PNG" alt="paleta da coca cola">
+
+    <h3>Pepsi</h3>
+    <img src="midia3/pepsi.PNG" alt="paleta da pepsi">
+
+    <h3 class = "w3-yellow">Android</h3>
+    <img src="midia3/android.PNG" alt="paleta do android">
+
+
+    <hr>
+
+    <h1>Cores da Metro UI</h1>
+    <p>as cores da metro UI são projetadas para serem flat e modernas.</p>
+    <img src="midia3/metro ui.PNG" alt="cores metro ui">
+    <img src="midia3/metro ui 2.PNG" alt="cores da metro ui">
+    <p style="font-size: 15px;">vale lembrar que as cores metro UI não são as unicas cores flat.(tambem existem a Win8 e a Flat UI, mas não achei relevante coloca-las.</p>
+        
+    <hr>
+    
+    <h1>Psicologia das cores</h1>
+    <p>Você sabia que as cores influenciam nosso cerebro? podem influenciar nosso comportamento, o sabor dos alimentos, a atratividade ou até as nossas percepções.</p>
+    <img src="midia4/black.PNG" alt="psicologia da cor preta">
+    <img src="midia4/blue.PNG" alt="psicologia da cor azuk">
+    <img src="midia4/green.PNG" alt="psicologia da cor verde">
+    <img src="midia4/grey.PNG" alt="psicologia da cor cinza">
+    <img src="midia4/red.PNG" alt="psicologia da cor vermelha">
+    <img src="midia4/white.PNG" alt="psicologia da cor branca">
+    <img src="midia4/yellow.PNG" alt="psicologia da cor amarela">
+
+
+    <h1>considerações finais</h1>
+    <p>Parabens! você chegou no final da pagina, como foi a experiencia? nos de o seu feedback para trazermos mais conteudo parecido.</p>
+
+
+
+    <a href="../Index.html" rel="prev">voltar</a>
+</body>
+</html>
