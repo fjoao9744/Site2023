@@ -1,0 +1,5 @@
+for "variavel de controle" in "numeração de repetições":
+
+
+a variavel de controle é uma variavel usada para guardar os valores repetindo dentro dela
+

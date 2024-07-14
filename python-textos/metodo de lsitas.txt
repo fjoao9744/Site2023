@@ -1,0 +1,33 @@
+lista.append()
+ex:
+adiciona um item na lista
+
+lista.remove()
+ex
+remove um item indicado 
+
+lista.insert(posição, item):
+ex
+lista.insert(0, abacaxi)
+
+adiciona um item em uma posição especifica
+
+lista.pop()
+ex:
+lista.pop(2)
+lista.pop()
+
+remove um item(indicando o indice do item)
+caso não tenha indice, remove o ultimo item
+
+lista.sort()
+ex:
+lista.sort()
+lista.sort(reverse=True)
+
+organiza uma lista(numeros em ordem crescente e palavra em ordem alfabetica)
+caso queire a ordem inversa, é só usar o parametro reverse e colocar True
+
+lista.reverse()
+ex:
+coloca a lista de traz para frente

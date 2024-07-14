@@ -1,0 +1,127 @@
+tipos de dados
+dados simples
+-strings(str)
+-inteiros(int)
+-flutuantes(float)
+-booleanos(bool)
+-complexos(complex)
+
+strings
+Strings a bruto modo são simplesmente palavras, elas são escritas entre aspas simples('') ou aspas duplas("").
+ex
+"Hello, World!"
+
+inteiros
+Os inteiros são basicamente os numeros inteiros.
+ex:
+1, 2, 3, 4, -5, 6, 7, -87, 91, 74, -20, 40
+
+flutuantes
+Os flutuantes são basicamente os "numeros com virgula" ou os numeros decimais.
+1.2, 3.40, 9.5, 3.14, 5.5
+        
+note que no python temos que usar "." envez de ",".
+
+Booleanos
+Os valores booleanos são 2 valores: True e False e esses valores basicamente representam uma condição falsa ou uma condição verdadeira.
+ex:
+1 == 2
+False
+5 + 1 == 6
+True
+9 - 3 == 3
+False
+        
+Complex
+Os numeros complexos possuem duas partes, a real e a imaginaria sendo que a parte imaginaria contem um j ao lado e elas não se interagem.
+ex:
+
+1 + 2j, 9 + 15j, 3 + 3j, 10 + 0j
+
+1 + 10j + 1 + 2j = 2 + 12j
+
+
+
+Dados Compostos
+-Tuplas(tuple)
+-Listas(list)
+-Conjuntos(set)
+-Dicionarios(dict)
+
+Tuplas
+A tupla é um tipo de dado que agrupa varios outros tipos de dados e são representadas usando o parenteses envolta dos valores da tupla.
+ex:
+
+ 
+            ("palavra", 2, 3, 4, 9.5, True, 5 + 1j, 4.1)
+        
+Sua principal caracteristica é que ela é imutavel, ou seja, ela não pode ser alterada após a sua definição.
+nas versões mais recentes do python, não necessariamente precisamos colocar o parenteses entre a lista de elementos 
+
+Listas
+A lista assim como a tupla, pode armazenar varios dados, porem, sua definição é usando colchetes([])
+ex:
+
+ 
+            ["palavra, 5, 6, 3 + 1j, False, True, 1.2, 1.5, "segunda palavra"]
+        
+A principal diferença entre a lista e a tuplas é o fato de que as listas são mutaveis, ou seja, podem ser alteradas com varios metodos.
+obs: caso você atribua uma lista a uma variavel, você cria uma relação entre elas, então se você alterar a segunda lista, a primeira tambem sera alterada
+para criar uma copia de uma lista temos que atribuir todos os itens de uma lista, a outra
+ex
+a = [1, 2, 3, 4] 
+b = a 
+errado
+
+a = [1, 2, 3, 4]
+b = a[:]
+correto
+
+é importante citar que toda string é uma lista.
+
+Conjuntos
+Os conjuntos não podem ter elementos repetidos e não tem ordem(ou seja, os elementos dentro de um conjunto sempre vão ter ordem aleatoria)
+e para criamos usamos as chaves ({})
+ex
+
+enquanto nas listas usamos o .append() para adicionar elementos, nos conjuntos usamos o .add()
+outra coisa importante sobre os conjuntos é que para acessarmos os valores dentro de um conjunto, nós temos que retira-lo do conjunto
+
+a = {2, 3, 4, 2, 5, 6}
+print(a[2])
+errado
+
+a = {2, 3, 4, 2, 5, 6}
+b = a.pop()
+print(b)
+certo
+
+
+
+
+Dicionarios
+Os dicionarios são definidos com as chaves({}) e agrupam os valores com chaves, ou seja, todo valor tem uma chave seguida de dois pontos para indicar o valor dessa chave.
+ex:
+
+ 
+            ["nome":"joão", "idade":19, "peso":80.00]
+        
+A principal diferença do dicionario para os demais dados compostos é o fato de possuir uma chave para acessar os valores.
+para facilitar o entendimento, é só lembrar de um dicionario, ele guarda palavras e seus significados, assim como o dicionario em python guarda as chaves e os valores
+ex:
+
+lembrando que as chaves são unicas, ou seja, não vão existir 2 chaves com o mesmo nome(com mesmo valor podem existir)
+
+Metodos dos dicionarios:
+chave.keys()
+retorna todas as chaves do dicionario
+
+chave.values()
+retorna os valores do dicionario
+
+chave.items()
+retorna os items do dicionario(ou seja, as chaves e os valores separados)
+
+
+Casting
+chamamos de casting o ato de converter o tipo de um valor.

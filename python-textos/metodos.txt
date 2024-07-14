@@ -1,0 +1,23 @@
+len()
+mostra o tamanho de uma string ou de quantos itens tem uma variavel composta
+ex
+palavra
+lista
+dicionario
+
+enumerated()
+mostra o indice de um item(usado analisadno um for com uma lista)
+ex
+
+lista = [10, 15, 20]
+for indice, valor in enumerate(lista):
+    print(indice, valor)
+*
+0 10
+1 15
+2 20
+
+repare que criamos 2 variaveis de controle com o for pois o metodo enumerate retorna 2 valores(o indice do item e o item)
+
+type()
+retorna o tipo de dado do elemento
