@@ -1,0 +1,3 @@
+faça um programa que leia valores de uma lista e retire os numeros pares que ouverem nela
+
+faça um programa que gere valores aleatorios dentro de uma lista e coloque-os em ordem 

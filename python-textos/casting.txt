@@ -1,0 +1,13 @@
+conversões:
+float -> int -> str
+
+1.0 -> 1 -> '1'
+
+int -> float
+
+18 -> 18.0
+
+boll -> int
+
+True -> 1
+False -> 0
